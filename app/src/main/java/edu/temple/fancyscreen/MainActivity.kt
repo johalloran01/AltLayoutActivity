@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
             text = "mt@ourcompany.com"
             setTextColor(Color.BLUE)
         }
-
+        //This is the first
         findViewById<TextView>(R.id.extension).text = "2253"
 
         findViewById<TextView>(R.id.department).text = "Design"
