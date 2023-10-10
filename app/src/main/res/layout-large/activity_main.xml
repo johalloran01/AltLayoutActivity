@@ -14,16 +14,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/name"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/name"
         android:layout_width="946dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
         app:layout_constraintEnd_toStartOf="@+id/directReportsRecyclerView"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_photo"
+        app:layout_constraintBottom_toTopOf="@id/emailLabel"
         tools:text="Name" />
 
     <TextView
@@ -36,6 +40,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintEnd_toStartOf="@+id/directReportsRecyclerView"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/email"
         app:layout_constraintTop_toBottomOf="@+id/name" />
 
     <TextView
@@ -46,6 +51,7 @@
         app:layout_constraintTop_toBottomOf="@id/emailLabel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/extensionLabel"
         tools:text="Email Address" />
 
     <TextView
@@ -58,6 +64,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintEnd_toStartOf="@+id/directReportsRecyclerView"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/extension"
         app:layout_constraintTop_toBottomOf="@id/email" />
 
     <TextView
@@ -68,6 +75,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/extensionLabel"
+        app:layout_constraintBottom_toTopOf="@id/departmentLabel"
         tools:text="Extension" />
 
     <TextView
@@ -80,6 +88,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/department"
         app:layout_constraintTop_toBottomOf="@id/extension" />
 
     <TextView
@@ -91,6 +100,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/departmentLabel"
+        app:layout_constraintBottom_toTopOf="@id/supervisorLabel"
         tools:text="Department name" />
 
     <TextView
@@ -103,6 +113,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/supervisor"
         app:layout_constraintTop_toBottomOf="@id/department" />
 
     <TextView
@@ -114,6 +125,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/supervisorLabel"
+        app:layout_constraintBottom_toTopOf="@id/directReportsLabel"
         tools:text="Supervisor\'s Name" />
 
     <TextView
@@ -126,6 +138,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/directReportsRecyclerView"
         app:layout_constraintTop_toBottomOf="@id/supervisor" />
 
     <androidx.recyclerview.widget.RecyclerView
@@ -134,7 +147,7 @@
         android:layout_height="867dp"
         android:layout_marginStart="6dp"
         android:layout_marginEnd="3dp"
-        android:layout_marginBottom="105dp"
+        android:layout_marginBottom="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
